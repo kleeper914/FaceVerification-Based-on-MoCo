@@ -274,3 +274,9 @@ def get_semi_hard_triplets(embeddings, labels, margin=0.2):
 
     return triplets
 
+if __name__ == "__main__":
+    # 测试pairwise_distance函数
+    embeddings = torch.tensor([[1.0, 2.0], [2.0, 3.0], [3.0, 4.0]])
+    distances = pairwise_distance(embeddings)
+    print("Pairwise distances:")
+    print(distances)
